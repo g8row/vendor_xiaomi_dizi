@@ -12753,6 +12753,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmorpho_video_stabilizer.so",
             ],
             shared_libs: [
+                "libutils",
                 "libui",
                 "libc",
                 "libm",
