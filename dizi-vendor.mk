@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dizi/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_n83_35_02_0a_cphy_nt36532_boe.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_n83_35_02_0a_cphy_nt36532_boe.json \
     vendor/xiaomi/dizi/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_n83_42_02_0b_cphy_nt36532_csot.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_n83_42_02_0b_cphy_nt36532_csot.json \
     vendor/xiaomi/dizi/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    vendor/xiaomi/dizi/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/dizi/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
     vendor/xiaomi/dizi/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/dizi/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -446,7 +447,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dizi/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/dizi/proprietary/vendor/etc/init/vendor.wlan.lowirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.wlan.lowirpcd.rc \
     vendor/xiaomi/dizi/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
-    vendor/xiaomi/dizi/proprietary/vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/dizi/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/xiaomi/dizi/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/xiaomi/dizi/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
@@ -652,20 +652,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dizi/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/dizi/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/xiaomi/dizi/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.sensormodule.n83_aac_gc08a3_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.n83_aac_gc08a3_main_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.sensormodule.n83_aac_ov08d10_front_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.n83_aac_ov08d10_front_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.sensormodule.n83_oflim_ov13b10_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.n83_oflim_ov13b10_main_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_aac_gc08a3_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_aac_gc08a3_main_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_aac_gc08a3_main_i_cn.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_aac_gc08a3_main_i_cn.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_aac_ov08d10_front_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_aac_ov08d10_front_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_aac_ov08d10_front_i_cn.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_aac_ov08d10_front_i_cn.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_oflim_ov13b10_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_oflim_ov13b10_main_i.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/com.qti.tuned.n83_oflim_ov13b10_main_i_cn.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.n83_oflim_ov13b10_main_i_cn.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/xiaomi/dizi/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/xiaomi/dizi/proprietary/vendor/lib64/camera/com.qti.sensormodule.n83_aac_gc08a3_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.n83_aac_gc08a3_main_i.bin \
     vendor/xiaomi/dizi/proprietary/vendor/lib64/camera/com.qti.sensormodule.n83_aac_ov08d10_front_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.n83_aac_ov08d10_front_i.bin \
     vendor/xiaomi/dizi/proprietary/vendor/lib64/camera/com.qti.sensormodule.n83_oflim_ov13b10_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.n83_oflim_ov13b10_main_i.bin \
@@ -682,11 +668,36 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dizi/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    libCB \
+    libOpenCL \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libgpudataproducer \
+    libgsl \
+    libkcl \
+    libkernelmanager \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
+    libvmmem \
+    vendor.qti.qspmhal@1.0-impl \
+    vendor.qti.qspmhal@1.0 \
+    btaudio_offload_if \
     com.qti.sensor.n83_aac_gc08a3_main_i \
     com.qti.sensor.n83_aac_ov08d10_front_i \
     com.qti.sensor.n83_oflim_ov13b10_main_i \
     com.bots.node.vendortagwrite \
     com.jigan.node.rawsupernight \
+    com.mi.node.facecenter \
+    com.mi.node.tsskinbeautifier \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -709,6 +720,7 @@ PRODUCT_PACKAGES += \
     com.qti.node.hdr10pgen \
     com.qti.node.hdr10phist \
     com.qti.node.memcpy \
+    com.qti.node.mialgocontrol \
     com.qti.node.mimovie \
     com.qti.node.ml \
     com.qti.node.mlinference \
@@ -751,55 +763,8 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.af \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
-    com.xiaomi.node.gpu3rd \
-    com.qti.stats.common \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    libCB \
-    libEGL_adreno \
-    libOpenCL \
-    libadreno_app_profiles \
-    libadreno_utils \
-    libbitmlenginev2 \
-    libcamxcommonutils \
-    libcamximageformatutils \
-    libcamxsettingsmanager \
-    libcamxswispiqmodule \
-    libcdsprpc \
-    libchilog \
-    libcom.qti.chinodeutils \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libgpudataproducer \
-    libgsl \
-    libhdr10plus \
-    libkcl \
-    libkernelmanager \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
-    libmmcamera_mfnr \
-    libopencv \
-    libopencv3a \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectTracker \
-    libvmmem \
-    vendor.qti.hardware.display.config-V2-ndk_platform \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0 \
-    btaudio_offload_if \
-    com.mi.node.facecenter \
-    com.mi.node.tsskinbeautifier \
-    com.qti.node.mialgocontrol \
     com.xiaomi.node.MIS \
+    com.xiaomi.node.gpu3rd \
     com.xiaomi.node.mimovie3rd \
     libdepthmapwrapper_secure \
     camx.device@3.2-impl \
@@ -847,6 +812,7 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.swmf \
     com.qti.settings.clarence \
     com.qti.settings.netrani \
+    com.qti.stats.common \
     com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.policy.mfl \
@@ -916,6 +882,7 @@ PRODUCT_PACKAGES += \
     libbase64 \
     libbatching \
     libbitmlengine \
+    libbitmlenginev2 \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
@@ -927,14 +894,18 @@ PRODUCT_PACKAGES += \
     libcamera_nn_stub \
     libcamera_scene \
     libcamerapostproc \
+    libcamxcommonutils \
     libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
     libcamxhwnodecontext \
     libcamxifestriping \
+    libcamximageformatutils \
     libcamxqsatalgo \
+    libcamxsettingsmanager \
     libcamxstatscore \
+    libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcapiv2svacnnvendor \
@@ -943,10 +914,13 @@ PRODUCT_PACKAGES += \
     libcdfw \
     libcdfw_remote_api \
     libcdsp_default_listener \
+    libcdsprpc \
+    libchilog \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcom.qti.chinodeutils \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
     libconfigdb \
@@ -970,6 +944,8 @@ PRODUCT_PACKAGES += \
     libengineplugin \
     libeva \
     libfastcrc \
+    libfastcvdsp_stub \
+    libfastcvopt \
     libgame_enhance \
     libgdtap \
     libgeofencing \
@@ -977,6 +953,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgrpc++_unsecure_prebuilt \
+    libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhme \
@@ -1028,6 +1005,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_cac \
     libmmcamera_lscv35 \
     libmmcamera_lut2d \
+    libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
     libmorpho_HdrChecker \
@@ -1038,6 +1016,8 @@ PRODUCT_PACKAGES += \
     libnetmgr \
     libnetmgrxfrmutils \
     liboemcrypto \
+    libopencv \
+    libopencv3a \
     libopestriping \
     libops \
     libos \
@@ -1046,8 +1026,6 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libprotobuf-cpp-full-3.9.1 \
-    libprotobuf-cpp-lite-3.9.1 \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1107,6 +1085,10 @@ PRODUCT_PACKAGES += \
     libqwes \
     librcmask \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdm-color \
     libsdm-colormgr-algo \
@@ -1201,6 +1183,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.dpmservice@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
@@ -1230,10 +1213,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1-impl \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
-    vendor.xiaomi.hardware.mlipay@1.0 \
-    vendor.xiaomi.hardware.mlipay@1.1 \
-    vendor.xiaomi.hardware.mtdservice@1.0 \
-    vendor.xiaomi.hw.touchfeature@1.0 \
     vendor_lib_rfsa_adsp_bm2n31_bin \
     vendor_lib_rfsa_adsp_bm2n32_bin \
     vendor_lib_rfsa_adsp_bm2n33_bin \
@@ -1328,7 +1307,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
-    vendor.xiaomi.hw.touchfeature@1.0-service \
     init.class_main \
     init.crda \
     init.kernel.post_boot-parrot \
