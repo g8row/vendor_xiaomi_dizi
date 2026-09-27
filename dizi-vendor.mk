@@ -706,6 +706,7 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
+    libsdmcore \
     libvmmem \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
