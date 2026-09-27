@@ -1368,8 +1368,6 @@ PRODUCT_PACKAGES += \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
-    libimscamera_jni \
-    libimsmedia_jni \
     libqcc \
     libqcc_file_agent_sys \
     libqccdme \
@@ -1394,13 +1392,8 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
-    AtFwd2 \
     PowerOffAlarm \
     QCC \
-    QtiTelephonyService \
-    QtiTelephony \
-    ims \
-    qcrilmsgtunnel \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
@@ -1538,8 +1531,6 @@ PRODUCT_PACKAGES += \
     qccsyshal@1.2-service
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
