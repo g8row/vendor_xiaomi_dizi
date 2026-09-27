@@ -1417,6 +1417,7 @@ PRODUCT_PACKAGES += \
     xiaomi-modem-common \
     android.hardware.security.keymint-service-qti-rkp.xml \
     c2_manifest_vendor_audio.xml \
+    c2_manifest_vendor_parrot.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.dolby.hardware.dms.xml \
